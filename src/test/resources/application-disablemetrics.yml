@@ -1,0 +1,14 @@
+# allows integration tests to selectively replace beans
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: test-metrics-monitoring-rest
+
+arthur:
+  metrics:
+    collection-group: DIRECT_API_SERVICE
+    tags:
+      instanceType: DATA_COLLECTOR
+    metrics-push-frequency-in-seconds: 5
+    is-key-based-rest-api-monitoring-enabled: false

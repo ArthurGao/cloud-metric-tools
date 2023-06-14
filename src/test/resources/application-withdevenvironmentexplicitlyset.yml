@@ -1,0 +1,14 @@
+# allows integration tests to selectively replace beans
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: test-app-arthur-metrics
+
+arthur:
+  metrics:
+    environment: DEVELOPMENT
+    collection-group: CATALOG_DATA_COLLECTOR
+    tags:
+      instanceType: DATA_COLLECTOR
+    metrics-push-frequency-in-seconds: 5

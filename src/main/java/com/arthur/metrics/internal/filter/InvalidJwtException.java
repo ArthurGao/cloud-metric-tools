@@ -1,0 +1,12 @@
+package com.arthur.metrics.internal.filter;
+
+public class InvalidJwtException extends Exception {
+
+  public InvalidJwtException(String message, Throwable cause) {
+    super(message, cause);
+  }
+
+  public InvalidJwtException(String message) {
+    super(message);
+  }
+}
